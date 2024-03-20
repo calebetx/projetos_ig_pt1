@@ -73,7 +73,6 @@ form {
     flex-direction: column;
     gap: 2rem;
 
-    background-color: #3b3434;
     padding: 1.875rem 3.75rem;
     border: 0.0625rem solid hsla(258, 9%, 78%, 0.562);
     border-radius: 1%;
