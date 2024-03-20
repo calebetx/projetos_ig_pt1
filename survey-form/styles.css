@@ -71,12 +71,11 @@ select {
 form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-
-    padding: 1.875rem 3.75rem;
-    border: 0.0625rem solid hsla(258, 9%, 78%, 0.562);
+    background-color: hsla(259, 10%, 37%, 0.815);
+    border: 0.0625rem solid hsla(259, 10%, 37%, 0.815);
     border-radius: 1%;
-    background-color: hsla(258, 9%, 78%, 0.562);
+    padding: 1.875rem 3.75rem;
+    gap: 2rem;
 }
 
 footer {
