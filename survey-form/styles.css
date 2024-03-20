@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-image: url('./src/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    flex: 1 0 auto;
+    margin: 0 auto;
+    margin-top: 2rem;
+    min-width: 200px;
+    width: 50rem;
+}
+
+header {
+    margin: 0 auto;
+    margin-top: 2rem;
+    min-width: 287px;
+}
+
+textarea {
+    resize: none;
+}
+
+input {
+    padding: 0.4rem 0.3rem;
+    vertical-align: middle;
+}
+
+select {
+    padding: 0.4rem 0.3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    background-color: transparent;
+    padding: 0.625rem;
+    border: 0.0625rem solid #360736;
+    border-radius: 3%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    flex-shrink: 0;
+}

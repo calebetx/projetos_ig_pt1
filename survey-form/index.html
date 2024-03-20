@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">É impressão minha ou o mundo está ficando mais doido?</h1>
+        <p id="description">Como... Como que calcula assíntotas....</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <div class="form-group">
+                <p id="name-label">Name</p>
+                <input id="name" type="text" placeholder="Insira seu nome" required />
+            </div>
+            <div class="form-group">
+                <p id="email-label">E-mail</p>
+                <input id="email" type="email" placeholder="Insira seu e-mail" required />
+            </div>
+            <div class="form-group">
+                <p id="number-label">Idade</p>
+                <input id="number" type="number" min="18" max="120" placeholder="Insira sua idade" />
+            </div>
+
+            <div class="form-group">
+                <p id="select-label">Qual opção melhor descreve sua função atual?</p>
+                <select id="dropdown">
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="desempregado">Desempregado</option>
+                    <option value="vagabundo">Vagabundo</option>
+                    <option value="desempregado+">Desempregado Plus</option>
+                    <option value="humans">Estudante de Humanas</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p id="radio-label">Sabe calcular assíntotas?</p>
+                <label for="yes"><input id="yes" type="radio" name="radio_button" checked /> Não</label>
+                <label for="no"><input id="no" type="radio" name="radio_button" /> Com certeza não</label>
+            </div>
+
+            <div class="form-group">
+                <p id="checkbox-label">Quantos problemas você tem atualmente?</p>
+                <label for="opcao1"><input type="checkbox" id="opcao1" name="opcao1" value="Opcao1"> Mais de 10</label>
+                <label for="opcao2"><input type="checkbox" id="opcao2" name="opcao2" value="Opcao2"> Mais de 50</label>
+                <label for="opcao3"><input type="checkbox" id="opcao3" name="opcao3" value="Opcao3"> Mais de 100</label>
+            </div>
+
+
+            <div class="form-group">
+                <p>Algum comentário ou sugestão?</p>
+                <textarea id="comment" rows="10" cols="35" maxlength="255" wrap="hard" spellcheck="true"></textarea>
+            </div>
+
+            <button id="submit" type="submit">ENVIAR</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>AS INFORMAÇÕES AQUI CONTIDAS NÃO DEVEM SER LEVADAS À SÉRIO. SÃO APENAS SÁTIRA</p>
+    </footer>
+</body>
+</html>
