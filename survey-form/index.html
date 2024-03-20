@@ -8,17 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./src/favicon/site.webmanifest">
 </head>
 <body>
     <header class="header">
-        <h1 id="title">É impressão minha ou o mundo está ficando mais doido?</h1>
-        <p id="description">Como... Como que calcula assíntotas....</p>
+        <h1 id="title">Pesquisa de Jogos</h1>
+        <p id="description">Formulário de pesquisa sobre os jogadores de jogos eletrônicos</p>
     </header>
 
     <main>
         <form id="survey-form">
             <div class="form-group">
-                <p id="name-label">Name</p>
+                <p id="name-label">Nome</p>
                 <input id="name" type="text" placeholder="Insira seu nome" required />
             </div>
             <div class="form-group">
@@ -31,42 +35,57 @@
             </div>
 
             <div class="form-group">
-                <p id="select-label">Qual opção melhor descreve sua função atual?</p>
+                <p id="select-label">Qual opção melhor descreve seu interesse em jogos eletrônicos?</p>
                 <select id="dropdown">
                     <option disabled selected value>Selecione uma opção</option>
-                    <option value="desempregado">Desempregado</option>
-                    <option value="vagabundo">Vagabundo</option>
-                    <option value="desempregado+">Desempregado Plus</option>
-                    <option value="humans">Estudante de Humanas</option>
+                    <option value="no_play">Não acompanho</option>
+                    <option value="watcher">Às vezes vejo outros jogarem</option>
+                    <option value="play_sometimes">Jogo de vez em quando</option>
+                    <option value="player">Jogar pra mim é um hobbie</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <p id="radio-label">Sabe calcular assíntotas?</p>
-                <label for="yes"><input id="yes" type="radio" name="radio_button" checked /> Não</label>
-                <label for="no"><input id="no" type="radio" name="radio_button" /> Com certeza não</label>
+                <p id="radio-label">O GOTY 2018 foi roubado?</p>
+                <label class="center_option" for="without_answner"><input id="without_answner" type="radio" name="radio_button" checked />Não acompanhei</label>
+                <label class="center_option" for="no"><input id="no" type="radio" name="radio_button" />Não</label>
+                <label class="center_option" for="dont_know"><input id="dont_know" type="radio" name="radio_button" checked />Tenho minhas dúvidas</label>
+                <label class="center_option" for="yes"><input id="yes" type="radio" name="radio_button" />Sim</label>
             </div>
 
             <div class="form-group">
-                <p id="checkbox-label">Quantos problemas você tem atualmente?</p>
-                <label for="opcao1"><input type="checkbox" id="opcao1" name="opcao1" value="Opcao1"> Mais de 10</label>
-                <label for="opcao2"><input type="checkbox" id="opcao2" name="opcao2" value="Opcao2"> Mais de 50</label>
-                <label for="opcao3"><input type="checkbox" id="opcao3" name="opcao3" value="Opcao3"> Mais de 100</label>
+                <p id="select-label">Qual opção melhor descreve seu interesse em jogos eletrônicos?</p>
+                <select id="dropdown">
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="no_play">Não acompanho</option>
+                    <option value="watcher">Às vezes vejo outros jogarem</option>
+                    <option value="play_sometimes">Jogo de vez em quando</option>
+                    <option value="player">Jogar pra mim é um hobbie</option>
+                </select>
             </div>
 
+            <div class="form-group">
+                <p id="checkbox-label">Quais os seus jogos favoritos?</p>
+                <label class="center_option" for="skyrim"><input type="checkbox" id="skyrim" name="fav_games" value="skyrim">The Elder Scrolls V: Skyrim</label>
+                <label class="center_option" for="gta"><input type="checkbox" id="gta" name="fav_games" value="gta">GTA San Andreas</label>
+                <label class="center_option" for="re4"><input type="checkbox" id="re4" name="fav_games" value="re4">Resident Evil 4</label>
+                <label class="center_option" for="celeste"><input type="checkbox" id="celeste" name="fav_games" value="celeste">Celeste</label>
+                <label class="center_option" for="rdr2"><input type="checkbox" id="rdr2" name="fav_games" value="rdr2">Red Dead Redemption 2</label>
+                <label class="center_option" for="mineirinho"><input type="checkbox" id="mineirinho" name="fav_games" value="mineirinho">Mineirinho Ultra Adventures</label>
+            </div>
 
             <div class="form-group">
                 <p>Algum comentário ou sugestão?</p>
                 <textarea id="comment" rows="10" cols="35" maxlength="255" wrap="hard" spellcheck="true"></textarea>
             </div>
 
-            <button id="submit" type="submit">ENVIAR</button>
+            <button id="submit" type="submit"><b>Enviar</b></button>
         </form>
-
     </main>
 
     <footer>
-        <p>AS INFORMAÇÕES AQUI CONTIDAS NÃO DEVEM SER LEVADAS À SÉRIO. SÃO APENAS SÁTIRA</p>
+        <img id="warning" src="/survey-form/src/info.png" alt="Lamp" width="32" height="32">
+        <p id="warning_text">Desenvolvido por Gabriel Calebe</p>
     </footer>
 </body>
 </html>
