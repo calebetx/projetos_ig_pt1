@@ -53,6 +53,7 @@ section {
 .projects-section-header {
     text-align: center;
     background-color: #262626;
+    color: #fff;
 }
 
 .my-projects {
@@ -79,7 +80,7 @@ section {
     margin-top: 10px;
     background-color: #262626;
     padding: 10px 10px;
-    color: #fff;
+    color: #ffffff;
 }
 
 /* Style the contact section */
