@@ -3,31 +3,54 @@
 <head>
     <link rel="stylesheet" href="styles.css" />
     <title>Potifólio Pessoal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
     <nav id="navbar">
         <ul class="nav-list">
             <li>
-                <a href="#welcome-section">About me</a>
+                <a href="#welcome-section">About</a>
+            </li>
+            <li>
+                <a href="#projects">Work</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
     </nav>
 
     <section id="welcome-section">
         <h1>Hi, my name is Vitor</h1>
+        <p>I am a computer science student</p>
     </section>
 
     <section id="projects">
-        <a href="https://codepen.io/VitorEDSV/full/ExJQara" target="_blank">
-            <img src="" alt="Formulário">
-            <p class="project-tile">Formulário</p>
-        </a>
+        <h2 class="projects-section-header">These are some of my projects</h2>
+        <div class="my-projects">
+            <a href="https://codepen.io/VitorEDSV/full/ExJQara" target="_blank" class="project-tile">
+                <img src="imgs/formulario.png" alt="Form" class="project-imgs">
+                <p class="project-title">Form</p>
+            </a>
+            <a href="https://codepen.io/VitorEDSV/full/KKYQzZP" target="_blank" class="project-tile">
+                <img src="imgs/nutricionalTable.png" alt="Nutricional Table" class="project-imgs">
+                <p class="project-title">Nutricional Table</p>
+            </a>
+            <a href="https://codepen.io/VitorEDSV/full/jORZqvO" target="_blank" class="project-tile">
+                <img src="imgs/coffeeMenu.png" alt="Coffee Menu" class="project-imgs">
+                <p class="project-title">Coffee Menu</p>
+            </a>
+        </div>
     </section>
 
     <section id="contact">
+        <h2>Entre em contato!</h2>
         <div class="contact-links">
             <a id="profile-link" href="https://github.com/VitorEmanuelDSV" target="_blank">GitHub</a>
+            <a id="profile-link" href="www.linkedin.com/in/vitoremanueldsvidal" target="_blank">LinkedIn</a>
+            <p>Email: vitor.emanueldsvidal@gmail.com</p>
         </div>
     </section>
 

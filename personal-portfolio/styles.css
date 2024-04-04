@@ -1,20 +1,95 @@
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-    html {
-        font-size: 60%;
-    }
-}
-  
-  /* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-    html {
-        font-size: 58%;
+@media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
     }
 }
 
-  /* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-    html {
-        font-size: 55%;
-    }
+/* Reset some default styles */
+body, h1, h2, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #141314f0;
+}
+
+/* Style the navigation bar */
+#navbar {
+    background-color: #2a2929;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list a {
+    color: #fff;
+}
+
+/* Style the sections */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#welcome-section {
+    margin: 200px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.projects-section-header {
+    text-align: center;
+    background-color: #262626;
+}
+
+.my-projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(110, 109, 109, 0.249);
+}
+
+.project-imgs {
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+    max-height: 275px;
+}
+
+.project-tile{
+    margin: 50px 50px;
+}
+
+.project-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style the contact section */
+#contact {
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 20px;
+}
+
+.contact-links a {
+    color: #fff;
 }
