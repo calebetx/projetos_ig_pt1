@@ -78,13 +78,6 @@ form {
     gap: 2rem;
 }
 
-footer {
-    display: flex;
-    flex-shrink: 0;
-    font-size: 18px;
-    color: #e7e7e7;
-}
-
 button[type="submit"] {
     padding: 10px 0;
     font-size: 18px;
@@ -113,11 +106,19 @@ button[type="submit"] {
 }
 
 
+footer {
+    display: flex;
+    flex-shrink: 0;
+    font-size: 18px;
+    color: #e7e7e7;
+}
+
 #warning {
     margin-left: 0.5rem;
     position: relative;
     display: inline-block;
     cursor: pointer;
+    filter: invert(1);
 }
 
 #warning:hover ~ #warning_text {
