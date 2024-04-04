@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" />
+    <title>Amplify</title>
+</head>
+<body>
+
+    <header id="header">
+        <img src="https://raw.githubusercontent.com/calebetx/projetos_ig_pt1/main/Product%20Landing%20Page/images/amplify-logo.png" id="header-img">
+        <h1 id="header-name">AMPLIFY</h1>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#video-exemplo">MUSICA</a></li>
+                <li><a class="nav-link" href="#contato">SOBRE</a></li>
+                <li><a class="nav-link" href="#assinatura">ASSINATURA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container"></div>
+
+        <section id="video-exemplo">
+            <iframe
+            id="video"
+            src="https://www.youtube-nocookie.com/embed/57Fe9e5iLgg?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        </section>
+
+        <section id="contato">
+            <h1>Amplify: Elevando a Música ao Próximo Nível</h1>
+            <p>O Amplify é mais do que um simples serviço de distribuição de música. É uma plataforma que ressoa com artistas, 
+                produtores e amantes da música em todo o mundo. Aqui estão algumas características que nos destacam:</p>
+            <ul>
+                <li>Acesso Global: O Amplify transcende barreiras geográficas. 
+                    Nossos algoritmos inteligentes garantem que sua música alcance ouvidos em todos os cantos do planeta. 
+                    Seja você um artista emergente ou uma lenda consagrada, sua música encontrará seu público.</li>
+                <li>Suporte ao Artista: Somos movidos pela paixão pela música e pelo respeito aos artistas. 
+                    Oferecemos suporte dedicado para ajudá-lo em sua jornada musical. 
+                    Seja através de dicas de marketing, orientação na criação de capas de álbuns ou 
+                    resolução de problemas técnicos, estamos aqui para você.</li>
+                <li>Parcerias: Se está interessado em se tornar parceiro, você pode nos deixar seu email aqui em baixo e logo entraremos em contato.</li>
+            </ul>
+            <p>Junte-se à nossa sinfonia digital. Amplify - onde a música encontra seu verdadeiro potencial.</p>
+            
+            <hr>
+
+            <h1>Contate-nos</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input
+                name="email"
+                id="email"
+                placeholder="Digite o seu Email"
+                type="email"
+                required
+                >
+                <input id="submit" type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section id="assinatura">
+            <div id="assinatura-titulo">
+                <h1>Planos de Assinatura</h1>
+            </div>
+            <div class="assinaturas">
+                <div class="plano">
+                    <h2>BÁSICO</h2>
+                    <h3>R$ 20,00 / Mês</h3>
+                    <hr>
+                    <ul>
+                        <li>Acesso Ilimitado a biblioteca</li>
+                        <li>Criar playlists personalizadas</li>
+                        <li>Recomendações de músicas baseado em seu gosto</li>
+                    </ul>
+                    <button class="assinar">ASSINAR</button>
+                </div>
+                <div class="plano">
+                    <h2>AVANÇADO</h2>
+                    <h3>R$ 40,00 / Mês</h3>
+                    <hr>
+                    <h3>Todo plano Básico além de:</h3>
+                    <ul>
+                        <li>Qualidade de áudio superior</li>
+                        <li>Acesso exclusivo a novos lançamentos</li>
+                        <li>Ofertas especiais em merchandising de artistas parceiros</li>
+                    </ul>
+                    <button class="assinar">ASSINAR</button>
+                </div>
+                <div class="plano">
+                    <h2>ANUAL</h2>
+                    <h3>R$ 350,00 / Ano</h3>
+                    <hr>
+                    <h3 id="descrição-anual">Todo plano Avançado, por um preço muito menor!</h3>
+                    <button class="assinar">ASSINAR</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
