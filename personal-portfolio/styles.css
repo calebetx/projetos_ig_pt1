@@ -70,12 +70,16 @@ section {
 }
 
 .project-tile{
-    margin: 50px 50px;
+    margin: 40px 50px;
+    padding: 1px 20px;
 }
 
 .project-title {
     text-align: center;
     margin-top: 10px;
+    background-color: #262626;
+    padding: 10px 10px;
+    color: #fff;
 }
 
 /* Style the contact section */
